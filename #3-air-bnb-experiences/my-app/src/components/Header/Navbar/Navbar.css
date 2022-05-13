@@ -1,0 +1,25 @@
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    border-style: solid;
+    padding-bottom: 25px;
+    border-bottom: 0.01em;
+    border-top: transparent;
+    border-color: #eeeeee;
+    border-left: transparent;
+    border-right: transparent;
+    background-color: white;
+}
+
+nav > div > a > img {
+    width: 215px;
+    max-width: 225px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+

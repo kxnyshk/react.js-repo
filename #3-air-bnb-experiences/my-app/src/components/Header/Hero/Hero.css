@@ -1,0 +1,52 @@
+.Hero-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Hero-title{
+    font-size: 50px;
+    color: #292b2c;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-top: 125px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Hero-grid-div{
+    display: flex;
+    padding-top: 50px;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.Hero-div > .Hero-grid-div > img {
+    max-width: 85%;
+    padding-right: 25px;
+}
+
+.Hero-header-div{
+    padding-top: 60px;
+    padding-left: 25px;
+    align-self: flex-start;
+}
+
+#Hero-header{
+    color: #292b2c;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Hero-para-div{
+    padding-left: 25px;
+    padding-right: 55px;
+    align-self: flex-start;
+}
+
+#Hero-para{
+    color: #292b2c;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}

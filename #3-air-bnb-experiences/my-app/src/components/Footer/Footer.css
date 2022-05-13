@@ -1,0 +1,77 @@
+/* Footer CSS */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.Footer-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Footer-col{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    color: white;
+}
+
+
+.Footer-row-div{
+    width: 100%;
+}
+
+.Footer-row-div-1{
+    padding-right: 5%;
+}
+
+.Footer-row-div-2{
+    padding-left: 5%;
+}
+
+.Footer-row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.Footer-row-1{
+    justify-content: flex-end;
+}
+.Footer-row-2{
+    justify-content: flex-start;
+}
+
+.Footer-row-header {
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Footer-row-body {
+    font-size: 11px;
+    font-weight: 200;
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: rgb(0, 255, 200);
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(150, 100, 255);
+}
+
+.Footer-icons{
+    padding-left: 5px;
+}

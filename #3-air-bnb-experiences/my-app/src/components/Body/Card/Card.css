@@ -1,0 +1,89 @@
+/* constant */
+.Gray{
+    color: #918E9B;
+}
+
+/* Card.js */
+.Bold{
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 25px;
+}
+
+.Cards-list{
+    gap: 25px;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+/* CardTemplate.js */
+.Card-div{
+    width: 175px;
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 12px;
+    position: relative;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Card-badge{
+    top: 10px;
+    left: 10px;
+    font-size: 10px;
+    padding: 5px 7px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 50%);
+}
+
+.Card-img{
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+}
+
+.Card-star{
+    height: 9px;
+}
+
+.Card-stats{
+    display: flex;
+    align-items: center;
+}
+
+.Card-stats-info{
+    font-size: 11px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.Card-stats-reviewCount{
+    padding-left: 2px;
+}
+
+.Card-stats-location{
+    padding-left: 4px;
+}
+
+.Card-info{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Card-info-title{
+    color: #292b2c;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.Card-info-price{
+    color: #292b2c;
+    font-size: 9px;
+    font-weight: 400;
+    margin-top: auto;
+}
