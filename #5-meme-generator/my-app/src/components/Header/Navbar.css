@@ -1,0 +1,27 @@
+.Navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: cover;
+    justify-content: flex-start;
+    background-repeat: no-repeat;
+    background-image: url('./Header background.png');
+}
+
+.Navbar-img{
+    padding-left: 25px;
+}
+
+#Image-troll-face{
+    width: 30px;
+}
+
+.Navbar-text{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+    font-family: 'Karla', sans-serif;
+}
