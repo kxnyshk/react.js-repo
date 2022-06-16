@@ -15,7 +15,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className={darkMode ? "App-dark" : "App-light"}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
       <Main darkMode={darkMode}/>
       <Footer darkMode={darkMode}/>
