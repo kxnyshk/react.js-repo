@@ -1,30 +1,39 @@
-.main{
+main{
+    height: 461px;
     color: white;
     padding: 50px 30px;
-    font-family: 'Inter', sans-serif;
-    background-image: url(./reactjs-icon\ 2.png);
+    background-size: 150px;
+    background-color: #282D35;
     background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
     background-position: right center;
+    background-image: url(./reactjs-icon-dark.png);
 }
 
-.main > h1 {
+main.light {
+    color: #282D35;    
+    background-color: white;
+    background-image: url(./reactjs-icon-light.png);
+}
+
+main > h1 {
     margin: 0;
     padding-top: 10px;
     display: flex;
     font-weight: 600;
 }
 
-.main > ul{
+main > ul{
     margin-top: 30px;
 }
 
-.main > ul > li{
+main > ul > li{
     font-weight: 400;
     line-height: 25px;
     padding-block: 7px;
 }
 
-.main > ul > li::marker {
+main > ul > li::marker {
     color: #61DAFB;
     font-size: 1.4em;
 }

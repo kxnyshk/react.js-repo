@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 
 import './Main.css';
 
-function Main(){
+function Main(props){
     return(
-      <div className="main">
+      <main className={props.darkMode ? "" : "light"}>
         <h1>Fun facts about React.js</h1>
         <ul>
           <li>Was first released in 2013</li>
@@ -14,7 +14,7 @@ function Main(){
           <li>Is maintained by Facebook</li>
           <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
-      </div>
+      </main>
     )
 }
 
