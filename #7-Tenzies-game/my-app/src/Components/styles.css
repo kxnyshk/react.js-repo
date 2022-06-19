@@ -1,0 +1,92 @@
+main {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #F5F5F5;
+}
+
+.Info-div{
+    color: #292b2c;
+    padding: 0px 20px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+
+.Info-title{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.Info-instructions{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    word-spacing: 4px;
+}
+
+.Dice-components{
+    gap: 12px;
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+}
+
+.Dice-face{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.Dice-num{
+    font-size: 17px;
+    font-weight: 400;
+    color: #292b2c;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.Button-div{
+    width: 100%;
+    text-align: center;
+}
+
+.Button-roll-dice{
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 5px;
+    background-color: #7c68ff;
+    font-family: 'Karla', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+    box-shadow: #7c68ff 0px 5px 10px -5px;
+}
+
+.Button-roll-dice:hover{
+    background-color: #ff7086;
+    box-shadow: #ff7086 0px 5px 10px -5px;
+}
+
+.Button-roll-dice:focus{
+    outline: none;
+}
+
+.Button-roll-dice:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
