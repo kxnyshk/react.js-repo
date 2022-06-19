@@ -8,7 +8,11 @@ import {nanoid} from "nanoid";
 import { data } from "./data.js";
 
 import './styles.css';
+import Dev from './Components/Dev.js';
+import Default from './Components/Default.js';
+
 import "react-mde/lib/styles/css/react-mde-all.css";
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 
 export default function App() {
     const [notes, setNotes] = React.useState(
@@ -41,7 +45,15 @@ export default function App() {
                     newArray.push(oldNote);
                 }
             }
+            return newArray;
         })
+    }
+
+    function deleteNote(event, noteID) {
+        event.stopPropagation();
+        setNotes(oldNotes => 
+            oldNotes.filter(note => note.id !== noteID)    
+        )
     }
     
     function findCurrentNote() {
@@ -51,6 +63,7 @@ export default function App() {
     }
     
     return (
+        <Router>
         <main>
         {
             notes.length > 0 
@@ -65,6 +78,7 @@ export default function App() {
                     currentNote={findCurrentNote()}
                     setCurrentNoteId={setCurrentNoteId}
                     newNote={createNewNote}
+                    deleteNote={deleteNote}
                 />
                 {
                     currentNoteId && 
@@ -77,16 +91,27 @@ export default function App() {
             </Split>
             :
             <div className="no-notes">
-                <h1>You have no notes</h1>
-                <button 
-                    className="first-note" 
-                    onClick={createNewNote}
-                >
-                    Create one now
-                </button>
+                <h1 className="no-notes-h1">You have no notes</h1>
+                <div className="first-note-button">
+                    <button 
+                        className="first-note" 
+                        onClick={createNewNote}>
+                        Create one now
+                    </button>
+                </div>
+
+                <div className="dev">
+                    <Link to={"/dev"}>dev</Link>
+                </div>
+                
+                <Routes>
+                    <Route path="/" element={<Default/>}></Route>
+                    <Route path="/dev" element={<Dev/>}></Route>
+                </Routes>
             </div>
             
         }
         </main>
+        </Router>
     )
 }
