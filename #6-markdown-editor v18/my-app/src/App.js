@@ -61,11 +61,31 @@ export default function App() {
             return note.id === currentNoteId
         }) || notes[0]
     }
+
+    const [DevLink, setDevLink] = React.useState(false);
+    function toggleDevLink() {
+        setDevLink(prevVal => !prevVal);
+    }
     
     return (
         <Router>
         <main>
         {
+            DevLink ?
+                <div className="dev-page">
+                    <div className="dev-page-div">
+                        <div className="dev-page-route">
+                            <Routes>
+                                <Route path="/" element={<Default/>}></Route>
+                                <Route path="/dev" element={<Dev/>}></Route>
+                            </Routes>
+                        </div>
+                        <div className="dev-link">
+                            <Link to={"/"} onClick={toggleDevLink} className='dev-link-text'>• back •</Link>
+                        </div>
+                    </div>
+                </div>
+            :
             notes.length > 0 
             ?
             <Split 
@@ -100,14 +120,13 @@ export default function App() {
                     </button>
                 </div>
 
-                <div className="dev">
-                    <Link to={"/dev"}>dev</Link>
+                <div className="dev-link">
+                    <Link to={"/dev"} onClick={toggleDevLink} className='dev-link-text'>• dev •</Link>
+                    <Routes>
+                        <Route path="/" element={<Default/>}></Route>
+                        <Route path="/dev" element={<Dev/>}></Route>
+                    </Routes>
                 </div>
-                
-                <Routes>
-                    <Route path="/" element={<Default/>}></Route>
-                    <Route path="/dev" element={<Dev/>}></Route>
-                </Routes>
             </div>
             
         }
