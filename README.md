@@ -1,2 +1,2 @@
-# react.js-scrimba-freecodecamp.org
-React.js freeCodeCamp.org
+# react.js-repo
+React.js projects repo
